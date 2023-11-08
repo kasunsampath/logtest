@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Style id="LineStyleGroundTrack">
+      <LineStyle>
+        <color>FF00FA14</color>
+        <width>1</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>66000000</color>
+        <fill>1</fill>
+        <outline>0</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="LineStyleNormal">
+      <LineStyle>
+        <color>FF00FA14</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>66000000</color>
+        <fill>1</fill>
+        <outline>0</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="LineStyleWarning">
+      <LineStyle>
+        <color>FF00FFFF</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>66000000</color>
+        <fill>1</fill>
+        <outline>0</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="LineStyleError">
+      <LineStyle>
+        <color>FF1400FF</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>66000000</color>
+        <fill>1</fill>
+        <outline>0</outline>
+      </PolyStyle>
+    </Style>
+	<Style id="NormalPlacemark">
+  		<LabelStyle>
+    		<scale>.6</scale>
+  		</LabelStyle>
+		<IconStyle>
+    		<scale>.7</scale>
+		</IconStyle>
+	</Style>
+	<Style id="HiddenPlacemark">
+  		<LabelStyle>
+    		<scale>0</scale>
+  		</LabelStyle>
+		<IconStyle>
+    		<scale>.7</scale>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="ShowHidePlacemark">
+    	<Pair>
+        	<key>normal</key>
+            <styleUrl>#HiddenPlacemark</styleUrl>
+      	</Pair>
+        <Pair>
+        	<key>highlight</key>
+            <styleUrl>#NormalPlacemark</styleUrl>
+       	</Pair>
+  	</StyleMap>
+	
+    <Placemark><name></name><styleUrl>#LineStyleNormal</styleUrl><LineString><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>
+</coordinates></LineString></Placemark>
+<Placemark><name></name><styleUrl>#LineStyleGroundTrack</styleUrl><LineString><altitudeMode>clampToGround</altitudeMode><coordinates>
+
+</coordinates></LineString></Placemark>
+
+  </Document>
+</kml>
